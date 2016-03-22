@@ -1,3 +1,4 @@
+![alt text](https://github.com/jamesngondo2013/Gesture-Based-UI-Development/blob/master/arduino_motor.png)
 # Gesture Based UI Development
 
 ### Team Members
