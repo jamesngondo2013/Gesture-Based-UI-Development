@@ -12,7 +12,7 @@ You just need to wear a small transmitting device in your hand which included an
 This will transmit an appropriate command to the robot so that it can do whatever we want.
 
 ## Purpose of the application 
-The purpose of this application is to demonstrate how Myo armbands can be used to detect the electrical activity of our muscles. 
+The purpose of this application is to demonstrate how [Myo](https://www.myo.com/) armbands can be used to detect the electrical activity of our muscles. 
 The Myo armband has Electromyography (EMG) sensors that directly sense muscle activity and motion, allowing it to read the activity 
 of our muscles in a refined way. As a result, gesture control has become a practicable way of interacting with everyday devices such as robots, 
 flying drones, control sound and lights on stage. Our robot tanker/ vehicle is an excellent example to demonstrate the merge of robotics with Myo.
@@ -34,24 +34,30 @@ This will command the robot to move forward and turns on the green LED lights sy
 #### 5. Rest
 This will reset all the LED lights.
 
-## Hardware used in creating the application
-1. Robot tanker/ truck
-2. A Myo armband running the latest firmware
-3. An Arduino board like the Uno
-4. The Arduino software/IDE
-5. A Windows, Mac, Linux Mobile devices
-6. An Arduino project you want to to gesture-enable. We hooked our board up to a bunch of LEDs.
-7. The MyoDuino project. You will also need the Microsoft Visual C++ Runtime, if you don't already have that installed.
+## Hardware and software used in creating the application
+1. Robot tanker/ truck with two DC Motors
+2. A [Myo](https://www.myo.com/) armband running the latest firmware
+3. An [Arduino](https://www.arduino.cc/en/Main/ArduinoBoardUno) board like the Uno and a USB connector cable
+4. [Adafruit Motorshield](http://www.adafruit.com/products/1438)
+5. The Arduino [software/IDE](https://www.arduino.cc/en/Main/Software)
+6. A Windows PC or Laptop, Mac, Linux
+7. A bunch of LEDs.
+8. A bread board
+9. 4v battries
+10. 2.2k ohm resistor
+11. The [MyoDuino project](https://market.myo.com/app/54bd7403e4b00db53ad527a2/myoduino-). 
+12. You will also need the [Microsoft Visual C++ Runtime](https://support.microsoft.com/en-us/kb/2977003), if you don't already have that installed.
 
 ## Architecture for the solution 
-A simple program to enable serial communications to an Arduino. 
-This programs sends formatted pose information to an Arduino connected to your computer.
-Included is an Arduino library to allow quick and easy programming.
+We hooked our Arduino board with an Adafruit Motorshield that takes two DC Motors and also supply power to the breadboard.
+On the breadboard are two LED lights and resistors. An Arduino project you want to gesture-enable. 
+We installed [MyoDuino](https://market.myo.com/app/54bd7403e4b00db53ad527a2/myoduino-), a simple program to enable serial communications to an Arduino. This programs sends formatted pose information to an Arduino board connected to our computer.
+We have a programming script written in C (using the Arduino IDE) that actually pass the commands to the arduino board and communicates with Myo.
 The Myo has been effectively synchronized with our robot to control its movements in all directions. Velocity and braking of the robot are also well controlled using MYO.
 MYO is worn on the forearm and it works by using a biosensor to pick up minute electrical impulses in the user's arm muscles.
-The software development kit (SDK) takes care of all of the low level details related to Bluetooth connections and data transmission. At its core, 
+The [software development kit (SDK)](https://developer.thalmic.com/) takes care of all of the low level details related to Bluetooth connections and data transmission. At its core, 
 the MYO armband provides spatial data and gestural data to an application. Spatial data informs the application about the orientation and movement 
-of the user's arm. The SDK provides data to the application in the form of events. There are three categories of events. 
+of the user's arm. The SDK provides data to the application in the form of events. 
 
 ## Conclusions & Recommendations
 This latest technology can help us minimize our dependence on huge hardware and software systems that control robots and other devices. 
