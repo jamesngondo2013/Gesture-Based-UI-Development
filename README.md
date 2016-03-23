@@ -25,7 +25,7 @@ For this project, Myo provides the following intuitive hand movements/ gestures:
 
 #### 1. Wave-Out
 The user waves out their wrist and this will command the robot to turn right.
-#### 2. Wave=Included
+#### 2. Wave-In
 The user waves in their wrist and the robot turns to the left.
 #### 3. Fist
 Making a fist will stop the robot/ vehicle and at the same time turn on the Rdg LED light symbolizing stop.
