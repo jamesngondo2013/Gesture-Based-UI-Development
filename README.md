@@ -6,6 +6,8 @@
 ##### Hary Wang
 ##### Julien Yaho
 
+#### Youtube: https://www.youtube.com/watch?v=UhubJ6kolZA
+
 ## Introduction
 A Gesture Controlled robot is a kind of robot which can be controlled by  your hand gestures not by old buttons.
 You just need to wear a small transmitting device in your hand which included an acceleration meter.
