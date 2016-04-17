@@ -122,3 +122,4 @@ discovering new and intuitive ways that can be used to program and simultaneousl
 can work side by side with humans and can contribute in the workplace. 
 If we were to undertake this project again, we would consider implementing ultrasonic sensors that will be used to measure distance as the robot moves back and forth - detecting any harmful/ dangerous object along the way, and another sensor that will detect the temperature around the area the robot is being used. All this information to be stored in database. We would have implemented a feature that will get the user details - operating the robot and store them in a database for easy tracking of persons using the device. We would also have implemented the speech recognition functionality to control the robot.  
 
+![alt text](https://github.com/jamesngondo2013/Gesture-Based-UI-Development/blob/master/robot.jpg)
